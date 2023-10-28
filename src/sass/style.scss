@@ -21,3 +21,11 @@ ul,
 li {
     margin: 0;
 }
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+@import "blocks/title";
+@import "blocks/promo";

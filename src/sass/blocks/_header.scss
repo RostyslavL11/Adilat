@@ -1,0 +1,27 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    &__icon {
+        img {
+            max-width: 198px;
+            object-fit: cover;
+        }
+    }
+    &__list {
+        display: flex;
+        justify-content: end;
+        list-style-type: none;
+    }
+    &__link {
+        margin-left: 45px;
+        a {
+            text-decoration: none;
+            font-family: "Exo 2";
+            font-weight: 600;
+            font-size: 18px;
+            color: $white-color;
+        }
+    }
+}

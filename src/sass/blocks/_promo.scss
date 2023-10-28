@@ -1,21 +1,11 @@
 .promo {
     padding: 45px 0 50px 0;
     height: 100vh;
-    background-color: $black-color;
-}
-.menu {
-    display: flex;
-    justify-content: space-between;
-    &__list {
-        display: flex;
-        justify-content: end;
-        list-style-type: none;
-    }
-    &__link {
-        margin-left: 15px;
-        a {
-            text-decoration: none;
-            color: #fff;
-        }
+    &__descr {
+        color: $white-color;
+        text-align: center;
+        font-family: "Exo 2";
+        font-size: 24px;
+        font-weight: 400;
     }
 }

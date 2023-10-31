@@ -34,4 +34,30 @@
         font-size: 24px;
         font-weight: 400;
     }
+    &__icon {
+        position: absolute;
+        bottom: 35px;
+        display: block;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+
+        background-color: rgba($botanic-color, 0.75);
+        border: 15px solid rgba($botanic-color, 0.5);
+        outline: 15px solid rgba($botanic-color, 0.25);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:before {
+            content: "";
+            min-width: 35px;
+            height: 35px;
+            background-image: url("../icons/icon-mouse.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            display: block;
+        }
+    }
 }

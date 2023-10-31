@@ -1,9 +1,32 @@
 .promo {
-    padding: 45px 0 50px 0;
+    position: relative;
     height: 100vh;
-
-    &__descr {
+    &:before {
+        position: absolute;
+        content: "";
+        z-index: -2;
+        top: 200px;
+        left: 0;
+        right: 0;
         margin: 0 auto;
+        display: block;
+        width: 1315px;
+        height: 670px;
+        background-color: $tile-color;
+        filter: blur(330px);
+    }
+    &__inner {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    &__content {
+        max-width: 775px;
+    }
+    &__text {
+        margin: 50px auto 0;
         width: 680px;
         color: $white-color;
         text-align: center;

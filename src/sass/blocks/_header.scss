@@ -1,5 +1,6 @@
 .header {
     position: absolute;
+    z-index: 1;
     top: 0;
     left: 0;
     right: 0;
@@ -19,7 +20,7 @@
     }
     &__list {
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
         list-style-type: none;
         gap: 45px;
     }

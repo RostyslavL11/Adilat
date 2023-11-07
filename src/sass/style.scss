@@ -27,6 +27,17 @@ li {
     margin: 0;
 }
 
+button {
+    font: inherit;
+    appearance: none;
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+    &:focus {
+        outline: none; /* Видалити рамку при фокусі */
+    }
+}
+
 .container {
     max-width: 1200px;
     width: 100%;
@@ -39,3 +50,4 @@ li {
 @import "blocks/promo";
 @import "blocks/about";
 @import "blocks/service";
+@import "blocks/works";

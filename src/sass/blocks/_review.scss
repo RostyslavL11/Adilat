@@ -1,0 +1,110 @@
+.review {
+    position: relative;
+    padding-top: 240px;
+    &:before {
+        position: absolute;
+        content: "";
+        z-index: -1;
+        top: 200px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        display: block;
+        width: 1315px;
+        height: 670px;
+        background-color: $tile-color;
+        filter: blur(330px);
+        opacity: 0.65;
+    }
+    &__slider {
+        margin-top: 70px;
+        padding: 0 85px;
+    }
+    &__list {
+        margin-bottom: 70px;
+    }
+    &__card {
+        max-width: 490px;
+        background-color: $black-color;
+        border-radius: 30px;
+        padding: 40px 26px 64px;
+
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px 30px;
+    }
+    &__img {
+        max-width: 90px;
+        height: 90px;
+        object-fit: cover;
+        border-radius: 50px;
+    }
+    &__name {
+        color: $white-color;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 31.2px;
+    }
+    &__position {
+        color: $gray-color;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 23.4px;
+    }
+    &__info {
+        align-self: center;
+    }
+    &__descr {
+        color: $white-color;
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 300;
+        line-height: 24px;
+    }
+    &__button {
+        &_prev,
+        &_next {
+            position: absolute;
+            z-index: 10;
+            min-width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: $tile-color;
+            top: calc(50% - 60px);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 20px 20px;
+        }
+        &_prev {
+            left: 15px;
+            background-image: url("../icons/arrows/icon-arrow-left.svg");
+        }
+        &_next {
+            right: 15px;
+            background-image: url("../icons/arrows/icon-arrow-right.svg");
+        }
+    }
+    &__dots {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        &_dot {
+            min-width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: $tile-color;
+            &-active {
+                background-color: $photon-color;
+            }
+        }
+    }
+}
+
+.swiper-slide {
+    opacity: 0;
+}
+
+.swiper-slide-active,
+.swiper-slide-next {
+    opacity: 1;
+}

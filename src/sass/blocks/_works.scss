@@ -12,42 +12,17 @@
         font-size: 24px;
         line-height: 1.3;
         color: $gray-color;
+        padding-bottom: 5px;
+        border-bottom: 5px solid transparent;
         &:hover {
             color: $photon-color;
+            border-color: $photon-color;
         }
         &_active {
+            border-color: $photon-color;
             color: $photon-color;
         }
     }
-    // &__tab {
-    //     color: $gray-color;
-    //     font-size: 24px;
-    //     font-weight: 400;
-    //     line-height: 31.2px;
-    //     list-style-type: none;
-    //     cursor: pointer;
-    //     transition: color 0.5s;
-    //     &:hover {
-    //         color: $photon-color;
-    //     }
-    //     &_active {
-    //         position: relative;
-    //         color: $photon-color;
-    //         transition: all 0.5s;
-    //         &:after {
-    //             position: absolute;
-    //             content: "";
-    //             display: block;
-    //             bottom: -5px;
-    //             left: 0;
-    //             height: 4px;
-    //             line-height: 1;
-    //             width: 100%;
-    //             background-color: $photon-color;
-    //         }
-    //     }
-    // }
-
     &__content {
         margin-top: 80px;
         display: grid;
@@ -72,6 +47,7 @@
             font-weight: 700;
             line-height: 31.2px;
         }
+
         &_desrc {
             margin: 5px 15px 0 15px;
             color: $gray-color;

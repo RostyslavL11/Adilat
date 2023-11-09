@@ -23,19 +23,29 @@ h5,
 h6,
 p,
 ul,
-li {
+li,
+figure,
+blockquote {
     margin: 0;
 }
 
-button {
+button,
+input {
     font: inherit;
     appearance: none;
     border: 0;
-    cursor: pointer;
     padding: 0;
+}
+
+button {
+    cursor: pointer;
     &:focus {
         outline: none; /* Видалити рамку при фокусі */
     }
+}
+
+label {
+    display: block;
 }
 
 .container {
@@ -46,8 +56,11 @@ button {
 }
 
 @import "blocks/title";
+@import "blocks/buttons";
 @import "blocks/header";
 @import "blocks/promo";
 @import "blocks/about";
 @import "blocks/service";
 @import "blocks/works";
+@import "blocks/review";
+@import "blocks/contacts";

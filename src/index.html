@@ -8,6 +8,7 @@
     <meta name="title" content="IT-агенція 'Adilat'">
     <meta name="description" content="Веб-сайти, мобільні застосунки, UX / UI дизайн, логотипи та брендінг, SMM.">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.min.css">
 
 </head>
@@ -189,13 +190,142 @@
                     </div>
 
                 </div>
+
+                <button class="btn">
+                    Показати ще...
+                </button>
+            </div>
+        </section>
+
+
+        <section class="review">
+            <div class="container">
+                <h2 class="title review__title">Відгуки клієнтів</h2>
+
+                <div class="review__slider swiper">
+                    <div class="review__list swiper-wrapper">
+                        <div class="review__item swiper-slide">
+                            <figure class="review__card">
+                                <img src="../img/review/review_woman.webp" alt="review" class="review__img">
+                                <figcaption class="review__info">
+                                    <h3 class="review__name">Іванна Квітка</h3>
+                                    <p class="review__position">Власниця бізнесу</p>
+                                </figcaption>
+                                <blockquote class="review__descr">
+                                    <p>
+                                        Команда фахівців виявилася професійною та креативною, їхній підхід був
+                                        індивідуальним та
+                                        спрямованим на досягнення наших бізнес-цілей.
+                                    </p>
+                                </blockquote>
+                            </figure>
+                        </div>
+
+                        <div class="review__item swiper-slide">
+                            <figure class="review__card">
+                                <img src="../img/review/review_man.webp" alt="review" class="review__img">
+                                <figcaption class="review__info">
+                                    <h3 class="review__name">Василь Жовтий</h3>
+                                    <p class="review__position">Щирий добродій</p>
+                                </figcaption>
+                                <blockquote class="review__descr">
+                                    <p>
+                                        Ми отримали високоякісний продукт, який повністю задовольнив наші очікування та
+                                        перевершив їх. Я рекомендую “IT-агенцію” як надійного та кваліфікованого
+                                        партнера.
+                                    </p>
+                                </blockquote>
+                            </figure>
+                        </div>
+
+                        <div class="review__item swiper-slide">
+                            <figure class="review__card">
+                                <img src="../img/review/review_man.webp" alt="review" class="review__img">
+                                <figcaption class="review__info">
+                                    <h3 class="review__name">Василь Жовтий</h3>
+                                    <p class="review__position">Щирий добродій</p>
+                                </figcaption>
+                                <blockquote class="review__descr">
+                                    <p>
+                                        Ми отримали високоякісний продукт, який повністю задовольнив наші очікування та
+                                        перевершив їх. Я рекомендую “IT-агенцію” як надійного та кваліфікованого
+                                        партнера.
+                                    </p>
+                                </blockquote>
+                            </figure>
+                        </div>
+
+                        <div class="review__item swiper-slide">
+                            <figure class="review__card">
+                                <img src="../img/review/review_man.webp" alt="review" class="review__img">
+                                <figcaption class="review__info">
+                                    <h3 class="review__name">Василь Жовтий</h3>
+                                    <p class="review__position">Щирий добродій</p>
+                                </figcaption>
+                                <blockquote class="review__descr">
+                                    <p>
+                                        Ми отримали високоякісний продукт, який повністю задовольнив наші очікування та
+                                        перевершив їх. Я рекомендую “IT-агенцію” як надійного та кваліфікованого
+                                        партнера.
+                                    </p>
+                                </blockquote>
+                            </figure>
+                        </div>
+
+
+                    </div>
+
+                    <div class="review__button">
+                        <button class="review__button_prev" type="button"></button>
+                        <button class="review__button_next" type="button"></button>
+                    </div>
+                    <div class="review__dots">
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="contacts">
+            <div class="container">
+                <h2 class="title contacts__title">Зв’язок з нами</h2>
+
+                <div class="contacts__wrapper">
+                    <form class="contacts__form">
+                        <div class="contacts__form_group">
+                            <label class="contacts__form_label" for="name">Ім’я</label>
+                            <input required class="contacts__form_input" id="name" name="name" type="text"
+                                placeholder="Уведіть ваше ім’я">
+                        </div>
+
+                        <div class="contacts__form_group">
+                            <label class="contacts__form_label" for="email">Email</label>
+                            <input required class="contacts__form_input" id="email" type="email" type="text"
+                                placeholder="Уведіть ваш email">
+                        </div>
+
+                        <div class="contacts__form_group">
+                            <label class="contacts__form_label" for="phone">Номер телефона</label>
+                            <input required class="contacts__form_input" id="phone" name="phone" type="tel"
+                                placeholder="+380">
+                        </div>
+
+                        <button class="btn contacts__btn" type="submit">
+                            Хочу консультацію
+                        </button>
+                    </form>
+                </div>
+
             </div>
         </section>
 
     </div>
 
-    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script src="js/script.js"></script>
 </body>
 

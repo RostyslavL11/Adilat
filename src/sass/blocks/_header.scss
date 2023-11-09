@@ -1,6 +1,6 @@
 .header {
-    position: absolute;
-    z-index: 1;
+    position: fixed;
+    z-index: 10;
     top: 0;
     left: 0;
     right: 0;
@@ -55,4 +55,9 @@
             }
         }
     }
+}
+.sticky {
+    background-color: $smoky-color;
+    padding: 15px 0;
+    transition: all 0.3s ease-in-out;
 }

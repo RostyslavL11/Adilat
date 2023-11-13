@@ -59,5 +59,8 @@
             background-position: center;
             display: block;
         }
+        &:hover {
+            animation: pulse 3s ease 0s infinite normal forwards;
+        }
     }
 }

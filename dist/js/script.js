@@ -1,23 +1,3 @@
-// $(document).ready(function () {
-
-//     $('ul.works__tabs button').on('click', 'button:not(.works__btn_active)', function () {
-//         $(this)
-//             .addClass('works__btn_active')
-//             .siblings()
-//             .removeClass('works__btn_active')
-//     })
-
-// });
-
-// $(document).ready(function () {
-//     $('ul.works__tabs button').on('click', function () {
-//         $(this)
-//             .addClass('works__btn_active')
-//             .parent().siblings().find('button')
-//             .removeClass('works__btn_active');
-//     });
-// });
-
 document.addEventListener('DOMContentLoaded', () => {
 
     const header = document.querySelector('.header');
@@ -30,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
+    // слайдер
     const swiper = new Swiper('.swiper', {
 
         slidesPerView: 2,
@@ -47,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
     });
 
+    // підсвічування меню відповідно до секціїї (залишилась проблема з миганням)
     header.addEventListener('click', event => {
         if (event.target.classList.contains('header__link')) {
             event.preventDefault();
@@ -77,4 +59,58 @@ document.addEventListener('DOMContentLoaded', () => {
             requestAnimationFrame(animation);
         }
     });
+
+    ///скрол 
+    const sections = document.querySelectorAll("section");
+    const menuLinks = document.querySelectorAll(".header__link");
+
+    const activateMenuItem = () => {
+        for (const section of sections) {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+
+            if (window.pageYOffset >= sectionTop - sectionHeight / 3) {
+                currentSection = section;
+            } else {
+                break;
+            }
+        }
+
+        menuLinks.forEach((link) => {
+            link.classList.toggle("active", link.hash === `#${currentSection.id}`);
+        });
+
+    };
+
+    window.addEventListener("scroll", activateMenuItem);
+
+    /////для табів
+    const filterBtns = document.querySelectorAll(".works__btn");
+    const worksList = document.querySelector(".works__content");
+
+    filterBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+            filterBtns.forEach((filterBtn) => {
+                filterBtn.classList.remove("is-active");
+            });
+            btn.classList.add("is-active");
+
+            const filterValue = btn.getAttribute("data-filter");
+
+            for (const item of worksList.children) {
+                if (filterValue === "all") {
+                    item.classList.remove('hide');
+                    item.classList.add('show');
+                } else if (item.classList.contains(filterValue)) {
+                    item.classList.remove('hide')
+                    item.classList.add('show')
+                } else {
+                    item.classList.remove('show')
+                    item.classList.add('hide')
+                }
+            }
+        });
+    });
+
+
 });

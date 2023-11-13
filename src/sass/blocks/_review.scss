@@ -16,6 +16,9 @@
         filter: blur(330px);
         opacity: 0.65;
     }
+    &__item {
+        transition: opacity 1s ease-in-out;
+    }
     &__slider {
         margin-top: 70px;
         padding: 0 85px;
@@ -62,6 +65,10 @@
         line-height: 24px;
     }
     &__button {
+        .swiper-button-disabled {
+            pointer-events: none;
+            background-color: $gray-color;
+        }
         &_prev,
         &_next {
             position: absolute;
@@ -74,6 +81,14 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: 20px 20px;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+            &:focus {
+                outline: 3px solid $photon-color;
+            }
+            &:hover {
+                background-color: $smoky-color;
+            }
         }
         &_prev {
             left: 15px;
@@ -88,13 +103,18 @@
         display: flex;
         justify-content: center;
         gap: 15px;
+
         &_dot {
+            transition: all 0.3s ease-in-out;
             min-width: 20px;
             height: 20px;
             border-radius: 50%;
             background-color: $tile-color;
             &-active {
                 background-color: $photon-color;
+            }
+            &:hover {
+                background-color: rgba($photon-color, 1);
             }
         }
     }

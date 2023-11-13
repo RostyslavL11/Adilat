@@ -24,7 +24,7 @@
         list-style-type: none;
         gap: 45px;
     }
-    &__link {
+    &__item {
         a {
             position: relative;
             text-decoration: none;
@@ -32,6 +32,7 @@
             font-weight: 600;
             font-size: 18px;
             color: $white-color;
+
             &:after {
                 position: absolute;
                 content: "";
@@ -39,23 +40,31 @@
                 bottom: 0;
                 left: 0;
                 height: 2px;
-                line-height: 1;
                 width: 100%;
+
                 background-color: $tile-color;
-                transform-origin: right bottom;
+                // transform-origin: left bottom;
                 transform: scaleX(0);
-                transition: transform 0.4s linear;
+                transition: transform 0.3s ease-in-out;
             }
+
             &:hover {
                 &:after {
                     transform: scaleX(1);
-                    transform-origin: left bottom;
-                    transition: transform 0.4s linear;
+                    // transform-origin: left bottom;
+                    // transition: transform 0.4s linear;
+                }
+            }
+
+            &.active {
+                &:after {
+                    transform: scaleX(1);
                 }
             }
         }
     }
 }
+
 .sticky {
     background-color: $smoky-color;
     padding: 15px 0;

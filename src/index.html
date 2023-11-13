@@ -20,11 +20,21 @@
                 <nav class="header__nav">
                     <a class="header__icon" href="#promo"><img src="icons/logo.svg" alt="Adilat logo"></a>
                     <ul class="header__list">
-                        <li class="header__link"><a href="#about">Про нас</a></li>
-                        <li class="header__link"><a href="#service">Послуги</a></li>
-                        <li class="header__link"><a href="#works">Проєкти</a></li>
-                        <li class="header__link"><a href="#review">Відгуки</a></li>
-                        <li class="header__link"><a href="#contacts">Контакти</a></li>
+                        <li class="header__item">
+                            <a class="header__link" href="#about">Про нас</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#service">Послуги</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#works">Проєкти</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#review">Відгуки</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#contacts">Контакти</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -153,50 +163,50 @@
 
                     <ul class="works__tabs">
                         <li class="works__tab">
-                            <button class="works__btn works__btn_active">Усі роботи</button>
+                            <button data-filter="all" class="works__btn works__btn_active">Усі роботи</button>
                         </li>
                         <li class="works__tab">
-                            <button class="works__btn">Брендування</button>
+                            <button data-filter="branding" class="works__btn">Брендування</button>
                         </li>
                         <li class="works__tab">
-                            <button class="works__btn">Застосунки</button>
+                            <button data-filter="apps" class="works__btn">Застосунки</button>
                         </li>
                     </ul>
 
-                    <div class="works__content ">
-                        <div class="works__item works__item_active">
+                    <div class="works__content">
+                        <div class="works__item all branding">
                             <img src="../img/work/creative_agency.webp" alt="image" class="works__item_img">
                             <h3 class="works__item_title">Креативне агентство</h3>
                             <p class="works__item_desrc">Брендінг, веб-сайт, застосунок</p>
                         </div>
 
 
-                        <div class="works__item works__item_active">
+                        <div class="works__item all apps">
                             <img src="../img/work/social_network.webp" alt="image" class="works__item_img">
                             <h3 class="works__item_title">Соціальна мережа</h3>
                             <p class="works__item_desrc">Дизайн, застосунок</p>
                         </div>
 
 
-                        <div class="works__item">
+                        <div class="works__item all branding">
                             <img src="../img/work/planning.webp" alt="image" class="works__item_img">
                             <h3 class="works__item_title">Планувальник справ</h3>
                             <p class="works__item_desrc">Брендінг, веб-сайт, застосунок</p>
                         </div>
 
-                        <div class="works__item">
+                        <div class="works__item all apps">
                             <img src="../img/work/digital_agency.webp" alt="image" class="works__item_img">
                             <h3 class="works__item_title">Digital-агентство</h3>
                             <p class="works__item_desrc">Логотип, веб-сайт</p>
                         </div>
 
-                        <div class="works__item">
+                        <div class="works__item all branding">
                             <img src="../img/work/digital_marketing.webp" alt="image" class="works__item_img">
                             <h3 class="works__item_title">Цифровий маркетинг</h3>
                             <p class="works__item_desrc">Брендінг, веб-сайт, застосунок</p>
                         </div>
 
-                        <div class="works__item">
+                        <div class="works__item all branding">
                             <img src="../img/work/accounting.webp" alt="image" class="works__item_img">
                             <h3 class="works__item_title">Онлайн-бухгалтерія</h3>
                             <p class="works__item_desrc">Брендінг, веб-сайт, застосунок</p>
@@ -228,6 +238,24 @@
                                             Команда фахівців виявилася професійною та креативною, їхній підхід був
                                             індивідуальним та
                                             спрямованим на досягнення наших бізнес-цілей.
+                                        </p>
+                                    </blockquote>
+                                </figure>
+                            </div>
+
+                            <div class="review__item swiper-slide">
+                                <figure class="review__card">
+                                    <img src="../img/review/review_man.webp" alt="review" class="review__img">
+                                    <figcaption class="review__info">
+                                        <h3 class="review__name">Василь Жовтий</h3>
+                                        <p class="review__position">Щирий добродій</p>
+                                    </figcaption>
+                                    <blockquote class="review__descr">
+                                        <p>
+                                            Ми отримали високоякісний продукт, який повністю задовольнив наші очікування
+                                            та
+                                            перевершив їх. Я рекомендую “IT-агенцію” як надійного та кваліфікованого
+                                            партнера.
                                         </p>
                                     </blockquote>
                                 </figure>
@@ -360,8 +388,7 @@
         </main>
     </div>
 
-    <!-- <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="js/script.js"></script>

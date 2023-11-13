@@ -55,6 +55,21 @@ label {
     margin: 0 auto;
 }
 
+.hide {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    transition-delay: 0.5s;
+}
+
+.show {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
 @import "blocks/title";
 @import "blocks/buttons";
 @import "blocks/header";
@@ -65,3 +80,5 @@ label {
 @import "blocks/review";
 @import "blocks/contacts";
 @import "blocks/footer";
+@import "blocks/animation";
+@import "blocks/media";

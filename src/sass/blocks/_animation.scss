@@ -1,0 +1,32 @@
+@keyframes pulse {
+    0% {
+        animation-timing-function: ease-in-out;
+        background-color: rgba($photon-color, 0.75);
+        border-color: rgba($photon-color, 0.75);
+        outline-color: rgba($photon-color, 0.5);
+    }
+    10% {
+        animation-timing-function: ease-in-out;
+        background-color: rgba($photon-color, 0.05);
+        border-color: rgba($photon-color, 1);
+        outline-color: rgba($photon-color, 0.75);
+    }
+    17% {
+        animation-timing-function: ease-in-out;
+        background-color: rgba($photon-color, 0.25);
+        border-color: rgba($photon-color, 0.5);
+        outline-color: rgba($photon-color, 1);
+    }
+    33% {
+        animation-timing-function: ease-in-out;
+        background-color: rgba($photon-color, 0);
+        border-color: rgba($photon-color, 0.25);
+        outline-color: rgba($photon-color, 0.75);
+    }
+    45% {
+        animation-timing-function: ease-i-outn;
+        background-color: rgba($photon-color, 0.25);
+        border-color: rgba($photon-color, 0);
+        outline-color: rgba($photon-color, 0.5);
+    }
+}

@@ -1,0 +1,13 @@
+.about {
+    padding: 160px 0 0 0;
+    &__text {
+        text-align: center;
+        margin-top: 70px;
+        color: $white-color;
+        font-size: 18px;
+        font-weight: 400;
+        &_paragraph {
+            margin-bottom: 20px;
+        }
+    }
+}

@@ -112,5 +112,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // бургер 
+    const burger = document.querySelector('.burger');
+    const menu = document.querySelector('.header__list');
+
+    burger.addEventListener('click', () => {
+        burger.classList.toggle('burger_active')
+        menu.classList.toggle('open');
+    })
+
 
 });

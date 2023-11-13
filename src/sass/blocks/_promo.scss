@@ -15,6 +15,9 @@
         background-color: $tile-color;
         filter: blur(330px);
     }
+    &__title {
+        font-size: 150px;
+    }
     &__inner {
         height: 100%;
         display: flex;

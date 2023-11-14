@@ -13,13 +13,18 @@ document.addEventListener('DOMContentLoaded', () => {
     // слайдер
     const swiper = new Swiper('.swiper', {
 
-        slidesPerView: 2,
         spanceBetween: 20,
         pagination: {
             el: '.review__dots',
             bulletActiveClass: 'review__dots_dot-active',
             bulletClass: 'review__dots_dot',
             clickable: true
+        },
+
+        breakpoints: {
+            769: {
+                slidesPerView: 2
+            }
         },
 
         navigation: {
@@ -91,9 +96,9 @@ document.addEventListener('DOMContentLoaded', () => {
     filterBtns.forEach((btn) => {
         btn.addEventListener("click", () => {
             filterBtns.forEach((filterBtn) => {
-                filterBtn.classList.remove("is-active");
+                filterBtn.classList.remove("works__btn_active");
             });
-            btn.classList.add("is-active");
+            btn.classList.add("works__btn_active");
 
             const filterValue = btn.getAttribute("data-filter");
 

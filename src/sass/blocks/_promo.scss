@@ -10,7 +10,8 @@
         right: 0;
         margin: 0 auto;
         display: block;
-        width: 1315px;
+        max-width: 1315px;
+        width: 100%;
         height: 670px;
         background-color: $tile-color;
         filter: blur(330px);

@@ -3,6 +3,7 @@
     &__tabs {
         margin-top: 70px;
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         gap: 60px;
         list-style-type: none;
@@ -30,6 +31,7 @@
         grid-template-columns: repeat(auto-fit, 370px);
         grid-template-rows: minmax(345px, auto);
         gap: 30px;
+        justify-content: center;
     }
     &__item {
         background-color: #272930;

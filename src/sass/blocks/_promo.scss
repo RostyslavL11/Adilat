@@ -31,7 +31,7 @@
     }
     &__text {
         margin: 50px auto 0;
-        width: 680px;
+        max-width: 680px;
         color: $white-color;
         text-align: center;
         font-family: "Exo 2";

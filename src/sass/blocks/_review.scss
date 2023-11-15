@@ -26,14 +26,16 @@
     }
     &__list {
         margin-bottom: 70px;
+        // display: flex;
+        // justify-content: space-between;
+        // gap: 10px;
     }
     &__card {
         margin: 0 auto;
         max-width: 490px;
         background-color: $black-color;
         border-radius: 30px;
-        padding: 40px 26px 64px;
-
+        padding: 40px 25px 64px;
         display: flex;
         flex-wrap: wrap;
         gap: 25px 30px;

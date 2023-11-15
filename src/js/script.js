@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // слайдер
     const swiper = new Swiper('.swiper', {
 
-        spanceBetween: 20,
+        spaceBetween: 20,
         pagination: {
             el: '.review__dots',
             bulletActiveClass: 'review__dots_dot-active',

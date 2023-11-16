@@ -2,9 +2,6 @@
 }
 
 @media (max-width: 1200px) {
-    // .container {
-    //     max-width: 960px;
-    // }
     .title {
         font-size: calc(28px + (48 - 28) * ((100vw - 360px) / (1200 - 360)));
         margin-bottom: calc(15px + 3vw);
@@ -40,14 +37,7 @@
     }
 }
 
-.wrapper {
-    overflow-x: hidden;
-}
-
 @media (max-width: 992px) {
-    // .container {
-    //     max-width: 720px;
-    // }
     .burger {
         display: block;
     }
@@ -90,19 +80,12 @@
 }
 
 @media (max-width: 768px) {
-    // .container {
-    //     max-width: 560px;
-    // }
-
     .swiper-slide-next {
         opacity: 0;
     }
 }
 
 @media (max-width: 576px) {
-    // .container {
-    //     width: 100%;
-    // }
     .review {
         &__slider {
             padding: 0;
